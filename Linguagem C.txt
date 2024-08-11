@@ -1,0 +1,55 @@
+include <stdio.h> A biblioteca stdio.h é uma das bibliotecas padrão mais importantes em C, e o nome dela significa "Standard Input/Output Header" (Cabeçalho de Entrada/Saída Padrão). Ela fornece funcionalidades para realizar operações de entrada e saída, como leitura e escrita de dados.
+
+#include <stdlib.h> inclui a biblioteca padrão do C chamada stdlib.h, que contém funções relacionadas à alocação de memória, controle de processos, conversão de tipos e outras utilidades.
+
+
+
+
+
+
+
+
+
+Na linguagem C, a função system() é usada para executar comandos do sistema operacional a partir de um programa em C. O comando passado como argumento para system() é executado como se fosse digitado no terminal (ou prompt de comando).
+
+Aqui estão alguns comandos do sistema que podem ser usados com system():
+
+system("pause"):
+
+Windows: Pausa a execução do programa e exibe a mensagem "Press any key to continue...". Muito comum em programas de console para manter a janela aberta até que o usuário pressione uma tecla.
+Linux/Unix: O comando "pause" não é reconhecido. Em vez disso, você pode usar algo como system("read -p 'Press Enter to continue...'").
+system("cls"):
+
+Windows: Limpa a tela do console.
+Linux/Unix: O equivalente seria system("clear").
+system("dir"):
+
+Windows: Exibe uma lista de arquivos e diretórios no diretório atual.
+Linux/Unix: O equivalente seria system("ls").
+system("echo Hello, World!"):
+
+Windows e Linux/Unix: Imprime "Hello, World!" no console.
+system("shutdown -s"):
+
+Windows: Inicia o processo de desligamento do computador.
+Linux/Unix: O equivalente seria system("shutdown -h now") para desligar o sistema imediatamente.
+system("mkdir new_folder"):
+
+Windows e Linux/Unix: Cria um novo diretório chamado "new_folder".
+system("rmdir folder_name"):
+
+Windows: Remove um diretório vazio chamado "folder_name".
+Linux/Unix: O equivalente seria system("rmdir folder_name") ou system("rm -r folder_name") para remover diretórios não vazios.
+Observações Importantes:
+Portabilidade: Nem todos os comandos são portáveis entre sistemas operacionais. O que funciona no Windows pode não funcionar no Linux e vice-versa.
+Segurança: Usar system() pode ser perigoso se você aceitar input de usuários, pois pode abrir brechas para injeção de comandos maliciosos.
+Retorno: system() retorna um valor inteiro que representa o status de execução do comando. Em sistemas Unix, por exemplo, retorna 0 em caso de sucesso, ou um valor diferente de zero se houver erro.
+Sempre que possível, é recomendável usar funções de C nativas para realizar tarefas, ao invés de depender de system() para chamar comandos do sistema operacional.
+
+
+
+
+
+SINTAXE É A REGRA!
+
+A SEMANTICA É A LOGICA!
