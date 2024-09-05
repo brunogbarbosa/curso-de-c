@@ -19,7 +19,6 @@ int main() {
 		} else if (salario > 500 && salario <= 600) {
 					
 			acresc = salario * 12/100 + 150;
-	
 			novo_sal = salario + acresc ;
 		
 			printf("O salario com a bonificação e de %.2f", novo_sal);
